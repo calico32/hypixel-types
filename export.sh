@@ -15,6 +15,6 @@ start=('^\/\/#region')
 end=('^\/\/#endregion')
 
 sed -i "/$start/,/$end/{/$start/!{/$end/!d}}" lib/index.d.ts
-sed -i "/\/\/ #exports/r /tmp/exports.ts" lib/index.d.ts
+sed -i "/$start/r /tmp/exports.ts" lib/index.d.ts
 
 rm /tmp/exports.ts
