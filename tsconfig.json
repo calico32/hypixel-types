@@ -1,5 +1,5 @@
 {
-  "include": ["types"],
+  "include": ["lib"],
   "compilerOptions": {
     "incremental": true,
     "target": "es2018",

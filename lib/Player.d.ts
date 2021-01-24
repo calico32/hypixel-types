@@ -22,7 +22,7 @@ type LevelingRewards = {
 
 export type Player = LevelingRewards &
   IndexType & {
-    _id?: string;
+    _id: string;
     achievementPoints?: number;
     achievementRewardsNew?: { [key: string]: number };
     achievements?: { [key: string]: number };
@@ -47,8 +47,8 @@ export type Player = LevelingRewards &
       day_g?: IndexType;
       day_i?: IndexType;
     };
-    channel?: string;
-    chat?: boolean;
+    channel: string;
+    chat: boolean;
     christmas2019Cooldowns?: { [key: string]: boolean };
     christmas2020Cooldowns?: { [key: string]: boolean };
     christmas2020Cooldowns2?: { [key: string]: boolean };
@@ -87,7 +87,7 @@ export type Player = LevelingRewards &
     customFilter?: string;
     disableTipMessages?: boolean;
     disguise?: string;
-    displayname?: string;
+    displayname: string;
     easter2020Cooldowns2?: { [key: string]: boolean };
     eugene?: { dailyTwoKExp?: number; weekly_booster?: number };
     eulaCoins?: boolean;
@@ -116,11 +116,12 @@ export type Player = LevelingRewards &
     lastLogin?: number;
     lastLogout?: number;
     lastMapVote?: number;
+    levelUp_MVP?: number;
     levelUp_MVP_PLUS?: number;
     levelUp_VIP?: number;
     levelUp_VIP_PLUS?: number;
     main2017Tutorial?: boolean;
-    mcVersionRp?: string;
+    mcVersionRp: string;
     monthlycrates?: {
       [key: string]: {
         MVP?: boolean;
@@ -141,20 +142,20 @@ export type Player = LevelingRewards &
     mostRecentMonthlyPackageRank?: string;
     multiTunnel?: any[];
     network_update_book?: string;
-    networkExp?: number;
+    networkExp: number;
     newPackageRank?: string;
     notifications?: boolean;
     onetime_achievement_menu_sort?: string;
     packageRank?: string;
-    ntBests?: ParkourCheckpointBests;
+    parkourCheckpointBests?: ParkourCheckpointBests;
     parkourCompletions?: { [key: string]: { timeStart?: number; timeTook?: number }[] };
     particlePack?: string;
     petConsumables?: { [key: string]: number };
     petJourneyTimestamp?: number;
     petStats?: PetStats;
-    playername?: string;
+    playername: string;
     pp?: string;
-    prefix?: string;
+    prefix: string;
     quests?: { [category: string]: { [key: string]: any } };
     questSettings?: { autoActivate?: boolean };
     quickjoin_timestamp?: number;
@@ -172,7 +173,7 @@ export type Player = LevelingRewards &
     socialMedia?: SocialMedia;
     specialtyCooldowns?: { [key: string]: boolean };
     spectators_invisible?: boolean;
-    stats?: Stats;
+    stats: Stats;
     summer2020Cooldowns?: { [key: string]: boolean };
     testPass?: boolean;
     thanksReceived?: number;
@@ -184,7 +185,7 @@ export type Player = LevelingRewards &
     tourney?: Tourney;
     transformation?: string;
     userLanguage?: string;
-    uuid?: string;
+    uuid: string;
     vanityConvertedBoxToday?: number;
     vanityFavorites?: string;
     vanityFirstConvertedBox?: number;
