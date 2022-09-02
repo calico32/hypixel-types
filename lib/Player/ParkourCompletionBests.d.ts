@@ -18,6 +18,6 @@ export type ParkourCheckpointBests = {
     | 'uhc'
     | 'Warlords']?: {
     /** Key is a number like string, e.g. `"0"` or `"2". */
-    [key: string]: number;
-  };
-};
+    [key: string]: number
+  }
+}

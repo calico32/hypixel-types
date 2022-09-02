@@ -6,5 +6,5 @@ export type IndexType = {
     | boolean
     | string[]
     | number[]
-    | { [key: string]: any };
-};
+    | { [key: string]: any }
+}

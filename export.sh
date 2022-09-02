@@ -5,7 +5,7 @@
 
 pushd lib >/dev/null
 
-find . | grep '.d.ts$' | sed -e '/^\.\/index\.d\.ts$/d' -e 's/\.d\.ts$//g' -e "s/^/export \* from '/" -e "s/$/';/" >/tmp/exports.ts
+find . | grep '.d.ts$' | sed -e '/^\.\/index\.d\.ts$/d' -e 's/\.d\.ts$//g' -e "s/^/export \* from '/" -e "s/$/'/" >/tmp/exports.ts
 
 popd >/dev/null
 
