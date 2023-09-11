@@ -1,3 +1,3 @@
 # hypixel-types
 
-hypixel API declaration files (very bad)
+hypixel API declaration files (very outdated, gets the job done though)
